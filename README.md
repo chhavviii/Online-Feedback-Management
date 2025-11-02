@@ -3,36 +3,6 @@ A full-stack Java web application that enables users to submit feedback online. 
 
 ---
 
-## 📁 Project Structure
-<details>
-<summary><strong>Click to expand: Project Folder Structure</strong></summary>
-src/
-└── main/
-├── java/
-│   └── com/
-│       └── feedback/
-│           ├── controller/
-│           │   ├── AdminServlet.java
-│           │   └── FeedbackServlet.java
-│           ├── dao/
-│           │   └── FeedbackDAO.java
-│           ├── model/
-│           │   └── Feedback.java
-│           └── util/
-│               └── copy/
-│                   └── DBUtil.java
-└── webapp/
-├── META-INF/
-├── WEB-INF/
-├── admin_dashboard.jsp
-├── feedback.jsp
-├── index.jsp
-└── result.jsp
-
-</details>
-
----
-
 ## ✨ Features
 
 - **User Feedback Submission:** Web interface for submitting feedback with name, email, comments.

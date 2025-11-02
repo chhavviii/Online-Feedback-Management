@@ -39,7 +39,7 @@ A full-stack Java web application that enables users to submit feedback online. 
 
 1. **Clone this repository**
     ```bash
-    git clone https://github.com/yourusername/online-feedback-management-system.git
+    git clone https://github.com/chhavviii/Online-Feedback-Management.git
     ```
 
 2. **Database Setup**

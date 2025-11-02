@@ -88,9 +88,9 @@ src/
 
 6. **Run the Application**
     - Feedback Form:  
-      [[http://localhost:8080/your-app-context/feedback.jsp](http://localhost:8585/Online-Feedback-Managment/feedback.jsp)]
+      [[http://localhost:8585/Online-Feedback-Management/feedback.jsp](http://localhost:8585/Online-Feedback-Managment/feedback.jsp)]
     - Admin Dashboard:  
-      [[http://localhost:8080/your-app-context/admin_dashboard.jsp](http://localhost:8585/Online-Feedback-Managment/)]
+      [[http://localhost:8585/Online-Feedback-Management/admin_dashboard.jsp](http://localhost:8585/Online-Feedback-Managment/)]
 
 ---
 

@@ -4,6 +4,8 @@ A full-stack Java web application that enables users to submit feedback online. 
 ---
 
 ## 📁 Project Structure
+<details>
+<summary><strong>Click to expand: Project Folder Structure</strong></summary>
 src/
  └── main/
       ├── java/
@@ -27,7 +29,7 @@ src/
            ├── index.jsp
            └── result.jsp
 
-
+</details>
 
 ---
 

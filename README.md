@@ -50,9 +50,9 @@ A full-stack Java web application that enables users to submit feedback online. 
     - Update your MySQL credentials in `DBUtil.java`:
       ```java
       // DBUtil.java
-      private static final String DB_URL = "jdbc:mysql://localhost:3306/feedbackdb";
-      private static final String DB_USER = "your_mysql_user";
-      private static final String DB_PASS = "your_mysql_password";
+      private static final String DB_URL = "jdbc:mysql://localhost:3306/feedback_db";
+      private static final String DB_USER = "root";
+      private static final String DB_PASS = "password";
       ```
 
 4. **Import Project into IDE**

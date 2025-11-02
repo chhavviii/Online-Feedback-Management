@@ -66,7 +66,7 @@ A full-stack Java web application that enables users to submit feedback online. 
     - Feedback Form:  
       [[http://localhost:8585/Online-Feedback-Management/feedback.jsp](http://localhost:8585/Online-Feedback-Managment/feedback.jsp)]
     - Admin Dashboard:  
-      [[http://localhost:8585/Online-Feedback-Management/admin_dashboard.jsp](http://localhost:8585/Online-Feedback-Managment/)]
+      [[http://localhost:8585/Online-Feedback-Management/admin?action=dashboard](http://localhost:8585/Online-Feedback-Managment/admin?action=dashboard)]
 
 ---
 

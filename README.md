@@ -3,41 +3,49 @@ A full-stack Java web application that enables users to submit feedback online. 
 
 ---
 
-## 📸 Screenshots
+## 📁 Project Structure
+src/
+└── main/
+├── java/com/feedback/
+│   ├── controller/
+│   │   ├── AdminServlet.java
+│   │   └── FeedbackServlet.java
+│   ├── dao/
+│   │   └── FeedbackDAO.java
+│   ├── model/
+│   │   └── Feedback.java
+│   └── util/copy/
+│       └── DBUtil.java
+└── webapp/
+├── META-INF/
+├── WEB-INF/
+├── admin_dashboard.jsp
+├── feedback.jsp
+├── index.jsp
+└── result.jsp
 
-### Feedback Database Table Example
-![Feedback Database Table](images/db-screenshot.png)
-*Example: MySQL Workbench view of the feedback table. Replace this screenshot with your own.*
-
-### Admin Dashboard (Sample View)
-![Admin Dashboard](images/admin-dashboard.png)
-*Admin dashboard for filtering and updating feedback entries.*
 
 ---
 
 ## ✨ Features
 
-- User-friendly web form for feedback submission
-- Automated sentiment analysis for categorization
-- Admin dashboard to view, filter (by category and status), and update feedback records
-- Update feedback status: Pending, Addressed, Rejected
-- Color-coded and icon-enhanced sentiment visualization
-- MVC architecture (Servlets, JSP, DAO, Model)
-- SQL injection prevention and data validation
-- Easily extensible structure for future features
+- **User Feedback Submission:** Web interface for submitting feedback with name, email, comments.
+- **Sentiment Analysis:** Basic categorization of feedback into Positive, Negative, or General.
+- **Admin Dashboard:** Filter, view, and update feedback entries by category and status.
+- **Status Updates:** Track feedback as Pending, Addressed, or Rejected.
+- **MVC Pattern:** Organized codebase using JavaBeans, Servlets (Controller), JSP (View), and DAO (Model/Data layer).
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Java 8+
-- JSP & Servlets
-- JDBC
-- MySQL
-- HTML5 / CSS3
-- JSTL
-- Apache Tomcat 8+
-- (Optionally) Maven
+- **Java 8+**
+- **JSP & Servlets**
+- **JDBC**
+- **MySQL**
+- **HTML5 / CSS3**
+- **Apache Tomcat 8+**
+- **Directory structure compatible with Maven/Gradle (src/main/java and src/main/webapp)**
 
 ---
 
@@ -45,43 +53,71 @@ A full-stack Java web application that enables users to submit feedback online. 
 
 - Java JDK 8 or newer
 - Apache Tomcat 8.x or newer
-- MySQL Server
+- MySQL Database Server
 - MySQL Connector/J (JDBC driver)
-- IDE like Eclipse, IntelliJ IDEA, or NetBeans
+- IDE (Eclipse, IntelliJ IDEA, NetBeans, etc.)
 
 ---
 
-## 🚀 Installation & Setup
+## 🚀 Setup & Installation
 
-1. **Clone the Repository**
+1. **Clone this repository**
     ```bash
     git clone https://github.com/yourusername/online-feedback-management-system.git
     ```
 
 2. **Database Setup**
-    - Open MySQL and create a database, for example:  
-      `CREATE DATABASE feedbackdb;`
-    - Run the `db/feedback_schema.sql` script (provided) to generate the required tables.
+    - Create a MySQL database (e.g., `feedbackdb`).
+    - Create necessary tables using your SQL schema (make a `feedback_schema.sql` and add to your repo if not present).
 
 3. **Configure Database Connection**
-    - In `src/com/feedback/dao/DBUtil.java` or directly in `FeedbackDAO.java`, update your DB credentials:
+    - Update your MySQL credentials in `DBUtil.java`:
       ```java
-      private static final String JDBC_URL = "jdbc:mysql://localhost:3306/feedbackdb";
-      private static final String JDBC_USERNAME = "root";
-      private static final String JDBC_PASSWORD = "yourpassword";
+      // DBUtil.java
+      private static final String DB_URL = "jdbc:mysql://localhost:3306/feedbackdb";
+      private static final String DB_USER = "your_mysql_user";
+      private static final String DB_PASS = "your_mysql_password";
       ```
 
 4. **Import Project into IDE**
-    - Open your Java IDE. Import the project as a Dynamic Web Project or Maven project.
+    - Open your IDE and import as a Maven or Dynamic Web Project.
+    - Verify folder structure (`src/main/java` and `src/main/webapp`).
 
-5. **Build and Deploy**
-    - Deploy the project to Tomcat’s `webapps/` directory or run from your IDE.
+5. **Deploy to Tomcat**
+    - Build project and deploy the `war` or use your IDE to run the app.
 
 6. **Run the Application**
-    - Start Tomcat.
-    - Access the feedback page:  
-      [http://localhost:8080/Online-Feedback-Management/feedback.jsp](http://localhost:8080/Online-Feedback-Management/feedback.jsp)
-    - Admin dashboard:  
-      [http://localhost:8080/Online-Feedback-Management/admin?action=dashboard](http://localhost:8080/Online-Feedback-Management/admin?action=dashboard)
+    - Feedback Form:  
+      [http://localhost:8080/your-app-context/feedback.jsp](http://localhost:8080/your-app-context/feedback.jsp)
+    - Admin Dashboard:  
+      [http://localhost:8080/your-app-context/admin_dashboard.jsp](http://localhost:8080/your-app-context/admin_dashboard.jsp)
 
 ---
+
+## 🗂️ Included Files & Folders
+
+- **/src/main/java/com/feedback/controller/**
+    - `AdminServlet.java` — Controls admin actions and dashboard
+    - `FeedbackServlet.java` — Handles new feedback submissions
+- **/src/main/java/com/feedback/dao/**
+    - `FeedbackDAO.java` — Database access and feedback query methods
+- **/src/main/java/com/feedback/model/**
+    - `Feedback.java` — Feedback JavaBean model
+- **/src/main/java/com/feedback/util/copy/**
+    - `DBUtil.java` — Utility for establishing database connection
+- **/src/main/webapp/**
+    - `admin_dashboard.jsp`, `feedback.jsp`, `index.jsp`, `result.jsp` — User/admin UI pages
+    - `META-INF/`, `WEB-INF/` — Java web app config directories
+
+---
+
+## 🖼️ Screenshots
+
+Include screenshots of your:
+- **Database table structure or sample data** (`images/db-screenshot.png`)
+- **Admin Dashboard** (`images/admin-dashboard.png`)
+- **User feedback form** (`images/feedback-form.png`)
+
+```markdown
+![Database Screenshot](images/db-screenshot.png)
+![Admin Dashboard](images/admin-dashboard.png)

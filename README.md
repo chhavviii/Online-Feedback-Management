@@ -87,13 +87,3 @@ A full-stack Java web application that enables users to submit feedback online. 
 
 ---
 
-## 🖼️ Screenshots
-
-Include screenshots of your:
-- **Database table structure or sample data** (`images/db-screenshot.png`)
-- **Admin Dashboard** (`images/admin-dashboard.png`)
-- **User feedback form** (`images/feedback-form.png`)
-
-```markdown
-![Database Screenshot](images/db-screenshot.png)
-![Admin Dashboard](images/admin-dashboard.png)

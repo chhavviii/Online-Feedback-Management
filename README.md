@@ -85,7 +85,7 @@ A full-stack Java web application that enables users to submit feedback online. 
     - `admin_dashboard.jsp`, `feedback.jsp`, `index.jsp`, `result.jsp` — User/admin UI pages
     - `META-INF/`, `WEB-INF/` — Java web app config directories
 - **/db/**
-    schema.sql           — SQL schema file to create and initialize database tables
+    - `schema.sql`           — SQL schema file to create and initialize database tables
 
 ---
 
